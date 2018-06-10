@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 let usuario = [
     {id: 0, username: 'Admin', password: '12345', name: 'Camila', lastname: 'Rosero', email: 'mcrp0406@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'},
-	{id: 1, username: 'IvanGT', password: '67890', name: 'Ivan', userlastname: 'Getial', email: 'ivanandresgt@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'}
+	{id: 1, username: 'IvanGT', password: '67890', name: 'Ivan', lastname: 'Getial', email: 'ivanandresgt@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'}
 ];
 
 let producto = [
@@ -51,7 +51,7 @@ app.post('/validateUsuario', (req, res) => {
             usuarioTmp[0]['username'] = value.username;
             usuarioTmp[0]['password'] = value.password;
             usuarioTmp[0]['name'] = value.name;
-			usuarioTmp[0]['userlastname'] = value.lastname;
+			usuarioTmp[0]['lastname'] = value.lastname;
             usuarioTmp[0]['email'] = value.email;
             usuarioTmp[0]['image'] = value.image;
             return true;
