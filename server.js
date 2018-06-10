@@ -13,10 +13,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // ***************************************************************
 
 let usuario = [
-    {id: 0, username: 'Cahamila11', password: '12345', name: 'Camila', lastname: 'Rosero', email: 'mcrp0406@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'},
+    {id: 0, username: 'Admin', password: '12345', name: 'Camila', lastname: 'Rosero', email: 'mcrp0406@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'},
 	{id: 1, username: 'IvanGT', password: '67890', name: 'Ivan', userlastname: 'Getial', email: 'ivanandresgt@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'}
 ];
-//comentario
+
 let producto = [
     {id: 0, name: 'Repollo Verde', valor: '1000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://2.bp.blogspot.com/-wINAnETbj1A/V2dN3P3AuXI/AAAAAAAAASo/UPllMFEtPVkI-FQztf4CewaZPO1fcb9sACLcB/s1600/beneficios-e-propriedades-do-repolho.jpg'},
 	{id: 1, name: 'Repollo Morado', valor: '2000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://www.lasemilleria.com/img/med/semillas_de_col_morada.jpg'},
