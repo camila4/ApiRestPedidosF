@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // ***************************************************************
 // ***************************************************************
 
-let usuario = [
+let users = [
     {id: 0, username: 'Admin', password: '12345', name: 'Camila', lastname: 'Rosero', email: 'mcrp0406@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'},
 	{id: 1, username: 'IvanGT', password: '67890', name: 'Ivan', lastname: 'Getial', email: 'ivanandresgt@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'}
 ];
@@ -32,42 +32,42 @@ let producto = [
 // ***************************************************************
 
 app.get('/', (req, res) => {
-    res.status(200).send("Welcome to API REST")
+    res.status(200).send("Welcome to API REST FARMIN APP")
 })
 
-app.get('/usuario', (req, res) => {
-    res.send(usuario)
+app.get('/users', (req, res) => {
+    res.send(users)
 })
 
 // Validar usuarios al momento de hacer login
-app.post('/validateUsuario', (req, res) => {
+app.post('/validateUsers', (req, res) => {
     let data = req.body;
-    let usuarioTmp = [{success: false, id: 0, username: '', password: '', name: '', lastname:'', email: '', image: ''}];
+    let usersTmp = [{success: false, id: 0, username: '', password: '', name: '', lastname:'', email: '', image: ''}];
 
-    usuario.some(function (value, index, _arr) {
+    users.some(function (value, index, _arr) {
         if( (value.username == data.username) && (value.password == data.Password) ){
-            usuarioTmp[0]['success'] = true;
-			usuarioTmp[0]['id'] = value.id;
-            usuarioTmp[0]['username'] = value.username;
-            usuarioTmp[0]['password'] = value.password;
-            usuarioTmp[0]['name'] = value.name;
-			usuarioTmp[0]['lastname'] = value.lastname;
-            usuarioTmp[0]['email'] = value.email;
-            usuarioTmp[0]['image'] = value.image;
+            usersTmp[0]['success'] = true;
+			usersTmp[0]['id'] = value.id;
+            usersTmp[0]['username'] = value.username;
+			usersTmp[0]['password'] = value.password;
+            usersTmp[0]['name'] = value.name;
+			usersTmp[0]['lastname'] = value.lastname;
+			usersTmp[0]['email'] = value.email;
+            usersTmp[0]['image'] = value.image;
             return true;
         }else{
             return false;
         }
     });
 
-     res.send(usuarioTmp)
+     res.send(usersTmp)
 })
 
 // Crear usuarios para una nueva cuenta
-app.post('/createUsuario', (req, res) => {
+app.post('/createUsers', (req, res) => {
     let data = req.body;
-    let consecutive = usuario.length;
-    let usuarioTmp = [{
+    let consecutive = users.length;
+    let usersTmp = [{
         success: true,
         id: consecutive,
         username: data.Username,
@@ -77,9 +77,9 @@ app.post('/createUsuario', (req, res) => {
         email: data.Email,
         image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'
     }];
-    usuario.push(usuarioTmp[0])
+    users.push(usersTmp[0])
 
-    res.send(usuarioTmp)
+    res.send(usersTmp)
 })
 
 // Listar todos los producto
