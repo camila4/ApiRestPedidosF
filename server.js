@@ -32,7 +32,7 @@ let producto = [
 // ***************************************************************
 
 app.get('/', (req, res) => {
-    res.status(200).send("Welcome to API REST FARMIN APP")
+    res.status(200).send("WELCOME TO API REST FARMIN APP")
 })
 
 app.get('/users', (req, res) => {
