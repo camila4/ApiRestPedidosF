@@ -82,6 +82,14 @@ app.post('/createUsers', (req, res) => {
     res.send(usersTmp)
 })
 
+// Eliminar un producto
+app.delete('/users/:id',(req, res) => {
+    let params = req.params;
+    users.splice(params.id, 1);
+    res.send('users Eliminado')
+})
+
+
 // Listar todos los producto
 app.get('/producto', (req, res) => {
     let pos = 0;
@@ -89,7 +97,7 @@ app.get('/producto', (req, res) => {
         entry.id = pos;
         pos++;
     });
-res.send(producto)
+	res.send(producto)
 })
 
 // Eliminar un producto
