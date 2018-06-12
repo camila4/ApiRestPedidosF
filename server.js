@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // ***************************************************************
 
 let users = [
-    {id: 0, username: 'Admin', password: '12345', name: 'Camila', lastname: 'Rosero', email: 'mcrp0406@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'},
-	{id: 1, username: 'IvanGT', password: '67890', name: 'Ivan', lastname: 'Getial', email: 'ivanandresgt@gmail.com', image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'}
+    {id: 0, username: 'Admin', password: '12345', name: 'Camila', lastname: 'Rosero', email: 'mcrp0406@gmail.com', image: 'https://amatq.ca/images/contact/profile2.png'},
+	{id: 1, username: 'IvanGT', password: '67890', name: 'Ivan', lastname: 'Getial', email: 'ivanandresgt@gmail.com', image: 'https://pre00.deviantart.net/67de/th/pre/i/2013/005/7/9/circle_profile_by_pdogkasper-d5qkroq.png'}
 ];
 
 let producto = [
@@ -75,7 +75,7 @@ app.post('/createUsers', (req, res) => {
         name: data.Name,
 		lastname: data.Lastname,
         email: data.Email,
-        image: 'https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png'
+        image: 'http://4.bp.blogspot.com/-1TEgDddlk8I/Trsy7h0LWzI/AAAAAAAAAEQ/NRK7Thedtzw/s1600/userPriv_01.png'
     }];
     users.push(usersTmp[0])
 
@@ -127,7 +127,7 @@ app.post('/producto', (req, res) => {
         name: data.Name,
 		valor: data.Valor,
 		descripcion: data.Descripcion,
-        image: 'https://www.icf.cl/wp-content/uploads/2016/09/el-auge-de-los-productos-agricolas-organicos-1200x642.jpg'
+        image: 'http://www.andomur.com/img/productos.png'
     };
    producto.push(productoTmp)
 
