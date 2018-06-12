@@ -18,14 +18,14 @@ let users = [
 ];
 
 let producto = [
-    {id: 0, name: 'Repollo Verde', valor: '1000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://2.bp.blogspot.com/-wINAnETbj1A/V2dN3P3AuXI/AAAAAAAAASo/UPllMFEtPVkI-FQztf4CewaZPO1fcb9sACLcB/s1600/beneficios-e-propriedades-do-repolho.jpg'},
-	{id: 1, name: 'Repollo Morado', valor: '2000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://www.lasemilleria.com/img/med/semillas_de_col_morada.jpg'},
-	{id: 2, name: 'Lechuga', valor: '1000', cantidad: '1', descripcion: 'Es una planta herbácea, anual, con hojas abiertas en los márgenes y punta redonda. Las hojas miden hasta 15cm y la planta puede llegar a medir de 15 a 50cm.', image: 'https://i.pinimg.com/originals/0c/d5/bf/0cd5bfff6adc9806612347662560f9d8.jpg'},
-	{id: 3, name: 'Zanahoria', valor: '1000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://biotrendies.com/wp-content/uploads/2015/07/zanahoria.jpg'},
-	{id: 4, name: 'Papa Amarilla', valor: '1000', cantidad: '1', descripcion: 'La papa criolla amarilla, originaria de Colombia, es un tubérculo de piel delgada y de color amarillo. Tiene un gran valor alimenticio ya que es una fuente rica en proteína, carbohidratos, potasio, vitaminas y minerales..', image: 'http://miplacitavirtual.com/wp-content/uploads/2016/06/PapaCriolla.jpg'},
-	{id: 5, name: 'Coliflor', valor: '1000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://t1.uc.ltmcdn.com/images/7/5/2/img_27257_ins_3699529_600.jpg'},
-	{id: 6, name: 'Acelga', valor: '1000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://biotrendies.com/wp-content/uploads/2015/06/Acelga.jpg'},
-	{id: 7, name: 'Brocoli', valor: '1000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'http://diariodegastronomia.com/wp-content/uploads/2013/03/brocoli-punto.jpg'}
+    {id: 0, name: 'Repollo Verde', valor: '$ 1.000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://2.bp.blogspot.com/-wINAnETbj1A/V2dN3P3AuXI/AAAAAAAAASo/UPllMFEtPVkI-FQztf4CewaZPO1fcb9sACLcB/s1600/beneficios-e-propriedades-do-repolho.jpg'},
+	{id: 1, name: 'Repollo Morado', valor: '$ 2.000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://www.lasemilleria.com/img/med/semillas_de_col_morada.jpg'},
+	{id: 2, name: 'Lechuga', valor: '$ 1.000', cantidad: '1', descripcion: 'Es una planta herbácea, anual, con hojas abiertas en los márgenes y punta redonda. Las hojas miden hasta 15cm y la planta puede llegar a medir de 15 a 50cm.', image: 'https://i.pinimg.com/originals/0c/d5/bf/0cd5bfff6adc9806612347662560f9d8.jpg'},
+	{id: 3, name: 'Zanahoria', valor: '$ 1.000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://biotrendies.com/wp-content/uploads/2015/07/zanahoria.jpg'},
+	{id: 4, name: 'Papa Amarilla', valor: '$ 1.000', cantidad: '1', descripcion: 'La papa criolla amarilla, originaria de Colombia, es un tubérculo de piel delgada y de color amarillo. Tiene un gran valor alimenticio ya que es una fuente rica en proteína, carbohidratos, potasio, vitaminas y minerales..', image: 'http://miplacitavirtual.com/wp-content/uploads/2016/06/PapaCriolla.jpg'},
+	{id: 5, name: 'Coliflor', valor: '$ 1.000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://t1.uc.ltmcdn.com/images/7/5/2/img_27257_ins_3699529_600.jpg'},
+	{id: 6, name: 'Acelga', valor: '$ 1.000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'https://biotrendies.com/wp-content/uploads/2015/06/Acelga.jpg'},
+	{id: 7, name: 'Brocoli', valor: '$ 1.000', cantidad: '1', descripcion: 'Es una planta comestible de la familia de las Brasicáceas, y una herbácea bienal, cultivada como anual, cuyas hojas lisas forman un característico cogollo compacto.', image: 'http://diariodegastronomia.com/wp-content/uploads/2013/03/brocoli-punto.jpg'}
 ];
 
 // ***************************************************************
@@ -110,7 +110,7 @@ app.put('/producto/:id',(req, res) => {
     res.send("Producto Actualizado")
 })
 
-// Crear contactos
+// Crear Producto
 app.post('/producto', (req, res) => {
     let data = req.body;
     let consecutive = producto.length;
